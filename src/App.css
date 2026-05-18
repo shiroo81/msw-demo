@@ -1,0 +1,98 @@
+.app {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.tabs button[aria-pressed='true'] {
+  border-color: #ff6a00;
+  background: #ff6a00;
+  color: white;
+}
+
+.panel {
+  padding: 1.25rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a2a2a;
+}
+
+@media (prefers-color-scheme: light) {
+  .panel {
+    background: #fff;
+    border-color: #e5e5e5;
+  }
+  .tabs {
+    border-color: #ddd;
+  }
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.user-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 0.4rem;
+}
+
+.error {
+  color: #ff6a6a;
+  background: rgba(255, 106, 106, 0.1);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+.success {
+  color: #6aff9c;
+  background: rgba(106, 255, 156, 0.08);
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+pre {
+  background: #1f1f1f;
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85em;
+}
+
+@media (prefers-color-scheme: light) {
+  pre { background: #f4f4f4; }
+}
